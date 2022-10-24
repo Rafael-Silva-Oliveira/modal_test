@@ -62,11 +62,6 @@ Hydralit Components Experimental Demo!
 </div>
 """
 
-hc.hydralit_experimental(True, inject_scripts=modal_code)
 
 st.markdown(modal_code,unsafe_allow_html=True)
-query_param = st.experimental_get_query_params()
-
-if query_param:
-    st.write('We caputred these values from the experimental modal form using Javascript + HTML + Streamlit + Hydralit Components.')
-    st.write(query_param)
+# hc.hydralit_experimental(True)
