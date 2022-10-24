@@ -2,7 +2,6 @@ import hydralit_components as hc
 import streamlit as st
 
 
-hc.hydralit_experimental(True)
 
 
 modal_code = """
@@ -63,6 +62,7 @@ Hydralit Components Experimental Demo!
 </div>
 """
 
+hc.hydralit_experimental(True, inject_scripts=modal_code)
 
 st.markdown(modal_code,unsafe_allow_html=True)
 query_param = st.experimental_get_query_params()
