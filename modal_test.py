@@ -2,6 +2,7 @@ import hydralit_components as hc
 import streamlit as st
 
 
+hc.hydralit_experimental(True)
 
 
 modal_code = """
@@ -64,4 +65,3 @@ Hydralit Components Experimental Demo!
 
 
 st.markdown(modal_code,unsafe_allow_html=True)
-# hc.hydralit_experimental(True)
