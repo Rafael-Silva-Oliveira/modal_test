@@ -2,7 +2,7 @@ import hydralit_components as hc
 import streamlit as st
 
 
-hc.hydralit_experimental(False)
+hc.hydralit_experimental(True)
 
 
 modal_code = """
